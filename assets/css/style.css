@@ -12,32 +12,49 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero-image {
     position: relative;
-    padding: 0;
-    height: 450px;
+    height: 400px;
     width: 100%;
     background: url("../img/hero.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 .container-fluid {
-    padding-left:0;
-    padding-right:0;
+    padding: 0;
 }
 
 /*--- End of code inspired by CSS module "Love Running" of Code Institute */
 
+.active {
+    border: 1px solid darkslategray;
+    border-radius: 10%;
+}
+
+.nav-link {
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
+    color: darkslategray;
+    margin-left:10px;
+    margin-right:10px;
+}
 
 .navbar {
-    background-color: rgb(212, 230, 241);  
+    background-color: rgb(212, 230, 241 );  
     padding-top:20px;
     padding-bottom: 20px;
 }
 
+@media only screen and (min-width: 700px) {
 .navbar-brand h1 {
-    font-weight: large;
+    font-size: 40px;
+    color: darkslategray;
     letter-spacing : 10px;
+    font-family: 'Montserrat';
+}
 }
 
- #navbarNav {
-
-    float : left;
+@media only screen and (max-width: 700px) {
+.navbar-brand h1 {
+    font-size: 20px;
+    color: darkslategray;
 }
+};
