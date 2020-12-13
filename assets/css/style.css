@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Padauk&display=swap');
+body {
+    font-family: 'Padauk', sans-serif;
+    background-color: rgb(168, 167, 167, 0.2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+/*----------Hero image : Code inspired by CSS module "Love Running" of Code Institute */
+
+#hero-image {
+    position: relative;
+    padding: 0;
+    height: 450px;
+    width: 100%;
+    background: url("../img/hero.jpg") no-repeat center center;
+}
+
+.container-fluid {
+    padding-left:0;
+    padding-right:0;
+}
+
+/*--- End of code inspired by CSS module "Love Running" of Code Institute */
+
+
+.navbar {
+    background-color: rgb(212, 230, 241);  
+    padding-top:20px;
+    padding-bottom: 20px;
+}
+
+.navbar-brand h1 {
+    font-weight: large;
+    letter-spacing : 10px;
+}
+
+ #navbarNav {
+
+    float : left;
+}
