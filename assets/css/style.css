@@ -8,14 +8,37 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
+
+h2 {
+    font-size: x-large;
+}
 /*----------Hero image : Code inspired by CSS module "Love Running" of Code Institute */
 
-#hero-image {
-    position: relative;
-    height: 400px;
-    width: 100%;
-    background: url("../img/hero.jpg") no-repeat center center;
+#hero-image img {
+    height:420px;
+    width:100%;
     background-size: cover;
+}
+
+@media only screen and (max-width: 500px) {
+#hero-image img {
+    height:200px;
+    max-width:500px;
+}}
+
+@media only screen and (min-width: 1000px) {
+#hero-image img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+#hero-image img:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
 }
 
 .container-fluid {
@@ -113,34 +136,57 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
-    margin-right: 5px;
-    margin-left: 5px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .bg-color-why {
-    background-color: rgb(212, 230, 241 );  
+    background: url("../img/why-img.jpg") center center;
     padding-top: 5%;
     padding-bottom:5%;
     padding-left: 10%;
     padding-right:10%; 
-    border-left: 2px solid darkslategray; 
-    border-right:2px solid darkslategray; 
-    border-radius : 5%;
     margin-left: auto;
     margin-right: auto;
     margin-top:30px;
     margin-bottom:20px;
+    border-radius:5%;
+}
+
+@media only screen and (min-width: 1000px) {
+.bg-color-why {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+.bg-color-why:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+}
+
+@media only screen and (max-width: 500px) {
+.bg-color-why {
+	-webkit-filter: grayscale(70%);
+	filter: grayscale(70%);
+}
 }
 
 .bg-color-why h2 {
 text-transform:uppercase;
 text-align: center;
-font-size: x-large;
-margin-top: 30%;
+margin-top: 20%;
 margin-bottom: 30%;
-font-weight: 700;
+font-weight: 600;
 letter-spacing: 5px;
 font-family: 'Padauk', sans-serif;
+}
+
+.bg-color-why h2:hover {
+    font-weight:800;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -164,5 +210,38 @@ margin-bottom: 10%;
     text-align: center;
     margin-top: 15px;
     letter-spacing: 1px;
+}
+
+/** Testimony section **/
+
+.testimony-title {
+    border-radius : 10%;
+    background:rgb(212, 230, 241 );
+}
+
+.testimony-title h2 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.testimony-section img {
+    width : 250px;
+    height: 200px;
+    border-radius: 5%;
+    margin-left: 5%;
+}
+.testimony-section {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.testimony-section p {
+    text-align : center;
+    margin-right: 10%;
+    padding-top: 20px;
+}
+
+.testimony-content {
+    margin-left:5%;
 }
 
