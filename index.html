@@ -76,7 +76,7 @@
         <section>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-sm-12">
+                    <div class="col-lg-8 col-md-11 col-sm-12">
                         <div class="testimony-title">
                             <h2><strong>What Our Clients Say</strong></h2>
                         </div>
@@ -84,7 +84,7 @@
                 </div>
                 <div class="container-fluid">
                 <div class="row justify-content-center testimony-content">
-                    <div class="col-lg-4 col-md-7 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="testimony-section">
                             <img src="assets/img/testimony1.jpg" alt="testimony-photo"/>
                         </div>
@@ -99,7 +99,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-7 col-sm-12">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
                         <div class="testimony-section">
                             <img src="assets/img/testimony2.jpg" alt="testimony-photo"/>
                         </div>
@@ -137,30 +137,58 @@
             <section>
                 <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-lg-6 col-sm-6">
-                            <!-- Form code inspired by Bootstrap -->
-                                <form>
-                                    <div class="form-group">
-                                        <label for="name"><strong>Name</strong></label>
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
+                                <div class="col-lg-4 d-none d-lg-block">
+                                    <img class="form-img" src="assets/img/form.jpg" alt="waterfall-pic"/>
+                                </div>
+                                <div class="col-lg-5 col-md-10 justify-content-center">  
+                                <!-- Form code inspired by Bootstrap -->
+                                    <div class="col-lg-12 col-md-12 col-sm-12">
+                                        <div class="form-title">
+                                            <h2><strong>Ready for Adventure?</strong></h2>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="surname"><strong>Surname</strong></label>
-                                        <input type="text" class="form-control" id="surname" placeholder="Surname">
-                                    </div> 
-                                    <div class="form-group">
-                                        <label for="email"><strong>Email</strong></label>
-                                        <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <div class="form-position col-lg-12 col-md-10 col-sm-8">
+                                        <form id="form-section">
+                                            <div class="form-group">
+                                                <label for="name"><strong>Name</strong></label>
+                                                <input type="text" class="form-control" id="name" placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="surname"><strong>Surname</strong></label>
+                                                <input type="text" class="form-control" id="surname" placeholder="Surname">
+                                            </div> 
+                                            <div class="form-group">
+                                                <label for="email"><strong>Email</strong></label>
+                                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                            <label for="email"><strong>My age</strong></label>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1">18-35 years old</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
+                                                <label class="custom-control-label" for="customCheck2">36-50 years old</label>
+                                            </div>
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
+                                                <label class="custom-control-label" for="customCheck3">More than 50 years old</label>
+                                            </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="exampleFormControlTextarea1"><strong>A project ?</strong></label>
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Now that you ask, I was thinking..."></textarea>
+                                            </div>
+                                            <div class="btn-position">
+                                                <button type="submit" class="btn btn-bg-form"><strong>Submit</strong></button>
+                                            </div>
+                                        </form>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="email"><strong>A project ?</strong></label>
-                                        <input type="text" class="form-control" id="text" placeholder="Now that you ask, I was thinking...">
-                                    </div>
-                                </form>
+                                </div>
+                            </div>
                             <!-- End of the Form code inspired by Bootstrap -->
                             </div>
-                        </div>
-                    </div>
             </section>
     </body>
     <footer>
