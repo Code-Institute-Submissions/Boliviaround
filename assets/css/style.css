@@ -15,6 +15,7 @@ h2 {
 /*----------Hero image : Code inspired by CSS module "Love Running" of Code Institute */
 
 #hero-image img {
+    margin-top:75px;
     height:450px;
     width:100%;
     background-size: cover;
@@ -38,7 +39,6 @@ h2 {
 	-webkit-filter: grayscale(0);
 	filter: grayscale(0);
 }
-
 }
 
 .container-fluid {
@@ -71,6 +71,12 @@ h2 {
     background-color: rgb(212, 230, 241);  
     padding-top:20px;
     padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    overflow: hidden;
 }
 
 
@@ -261,13 +267,13 @@ margin-bottom: 10%;
 
 .form-img {
     border-radius:5%;
-    margin-top:10%;
-    height:95%;
+    margin-top:20%;
+    height:80%;
 }
 
 .form-title {
     text-align:center;
-    margin-top:15%;
+    margin-top:20%;
     border-radius : 10%;
     background-color:rgb(212, 230, 241 );
 }
@@ -300,3 +306,48 @@ margin-bottom: 10%;
     margin-top:5%;
     text-align:center;
 }
+
+/**---What to do section ----*/
+
+.whattodo-type {
+    width:100%;
+    height: 400px;
+    background-color:rgb(212, 230, 241 );
+    margin-left:5%;
+    margin-top:5%;
+    border-radius:5%;
+    border-top:2px solid black;
+    border-bottom:2px solid black;
+}
+
+.whattodo-type h2 {
+    margin-top:50px;
+    padding-top: 15px;
+    text-transform:uppercase;
+    padding-bottom:15px;
+    text-align:center;
+    font-size:1em;
+    font-weight:900;
+}
+.whattodo-details {
+    border-radius:5%;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    margin-top:5%;
+    margin-left:3%;
+}
+
+.whattodo-title {
+    text-align:center;
+    margin-top:5%;
+    border-radius : 10%;
+    background-color:rgb(212, 230, 241 );
+    margin-left:auto;
+    margin-right:auto;
+}
+
+@media only screen and (max-width: 1000px) {
+.whattodo-type h2 {
+    font-size:0.75em;
+}};
+

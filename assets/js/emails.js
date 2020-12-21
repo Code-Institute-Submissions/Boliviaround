@@ -1,3 +1,5 @@
+/** Code inspired by Code Institute class and EmailsJS website */
+
 function sendMail(contactForm) {
     emailjs.send("service_7qovzsn","BoliviAround", {
         "from_name": contactForm.name.value,
