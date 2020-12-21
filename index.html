@@ -8,7 +8,15 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" /> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/style.css">
-        <title>BoliviAroud</title>
+        <title>BoliviAroud</title>    
+            <script type="text/javascript"
+                    src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+            </script>
+            <script type="text/javascript">
+            (function(){
+                emailjs.init("user_vM9irJ1ErhNPALqgxjdQa");
+        })();
+            </script>
     </head>
     <body>
         <!-- Navbar: Code from Bootstrap-->
@@ -148,37 +156,22 @@
                                         </div>
                                     </div>
                                     <div class="form-position col-lg-12 col-md-10 col-sm-8">
-                                        <form id="form-section">
+                                        <form onsubmit="return sendMail(this);" id="form-section">
                                             <div class="form-group">
                                                 <label for="name"><strong>Name</strong></label>
-                                                <input type="text" class="form-control" id="name" placeholder="Name">
+                                                <input type="text" name="name" class="form-control" id="name" placeholder="Name" required>
                                             </div>
                                             <div class="form-group">
                                                 <label for="surname"><strong>Surname</strong></label>
-                                                <input type="text" class="form-control" id="surname" placeholder="Surname">
+                                                <input type="text" name="surname" class="form-control" id="surname" placeholder="Surname" required>
                                             </div> 
                                             <div class="form-group">
                                                 <label for="email"><strong>Email</strong></label>
-                                                <input type="email" class="form-control" id="email" placeholder="Email">
+                                                <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required>
                                             </div>
                                             <div class="form-group">
-                                            <label for="email"><strong>My age</strong></label>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                <label class="custom-control-label" for="customCheck1">18-35 years old</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck2">
-                                                <label class="custom-control-label" for="customCheck2">36-50 years old</label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck3">
-                                                <label class="custom-control-label" for="customCheck3">More than 50 years old</label>
-                                            </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="exampleFormControlTextarea1"><strong>A project ?</strong></label>
-                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Now that you ask, I was thinking..."></textarea>
+                                                <label for="message"><strong>A project ?</strong></label>
+                                                <textarea class="form-control" name="message" id="message" rows="4" placeholder="Now that you ask, I was thinking..."></textarea>
                                             </div>
                                             <div class="btn-position">
                                                 <button type="submit" class="btn btn-bg-form"><strong>Submit</strong></button>
@@ -201,4 +194,5 @@
                 </ul>
             </div>
         </footer>
+    <script src="assets/js/emails.js"></script>
 </html>
