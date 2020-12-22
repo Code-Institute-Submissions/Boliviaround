@@ -80,35 +80,49 @@
             </section>
         </div>
         <!-- End of section Why? -->
-
         <!-- Section What to do? -->
         <section>
             <div class="container">
-                    <div class="col-lg-8 col-md-11 col-sm-12 whattodo-title">
-                        <h2><strong>What To Do?</strong></h2>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-11 col-sm-12 whattodo-title">
+                            <h2><strong>What To Do?</strong></h2>
+                        </div>
                     </div>
-                <div class="row justify-content-center">
-                    <div class="col-3 whattodo-type">
-                        <h2 class=" activities-list">
-                            Adventures
-                        </h2>
-                        <h2 class="activities-list">
-                            Party
-                        </h2>
-                        <h2 class="activities-list">
-                            Eating out
-                        </h2>
-
-
-
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 whattodo-type btn-bg-position">
+                            <button type="submit" class="btn btn-bg-activity">
+                                Adventures
+                            </button>
+                            <button type="submit" class="btn btn-bg-activity">
+                                Party
+                            </button>
+                            <button type="submit" class="btn btn-bg-activity">
+                                Eating out
+                            </button>
+                        </div>
                     </div>
-                    <div class="col-8 whattodo-details">
-
-
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-12 whattodo-details">
+                            <div class="description">
+                                <h3>Salar d'Uyuni</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                            </div>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 col-md-12">
+                                    <button type="submit" class="btn btn-bg"><strong>Adventure 1</strong></button>
+                                    <button type="submit" class="btn btn-bg"><strong>Adventure 2</strong></button>
+                                    <button type="submit" class="btn btn-bg"><strong>Adventure 3</strong></button>
+                                </div>
+                            </div>
+                            <div id="map">
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
         <!--Testimony section-->
         <section>
@@ -205,7 +219,7 @@
                                                 <textarea class="form-control" name="message" id="message" rows="4" placeholder="Now that you ask, I was thinking..."></textarea>
                                             </div>
                                             <div class="btn-position">
-                                                <button type="submit" class="btn btn-bg-form"><strong>Submit</strong></button>
+                                                <button type="submit" class="btn btn-bg"><strong>Submit</strong></button>
                                             </div>
                                         </form>
                                     </div>
@@ -226,5 +240,8 @@
                 </ul>
             </div>
         </footer>
+    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjDl_1sMILKl7VyHqlBRxE4Moif3iW64g&callback=initMap"></script>
+    <script src="assets/js/maps.js"></script>
     <script src="assets/js/emails.js"></script>
 </html>

@@ -292,12 +292,13 @@ margin-bottom: 10%;
     margin-left: auto;
     margin-right: auto;}
 
-.btn-bg-form {
-    background-color: rgb(212, 230, 241 );
+.btn-bg {
+    background-color: rgb(212, 230, 241 ); 
     border-radius:10%;
+    max-width:150px;
 }
 
-.btn-bg-form:hover {
+.btn-bg:hover {
     background-color: rgb(127, 179, 213);
     color:white;
 }
@@ -309,34 +310,53 @@ margin-bottom: 10%;
 
 /**---What to do section ----*/
 
-.whattodo-type {
-    width:100%;
-    height: 400px;
-    background-color:rgb(212, 230, 241 );
-    margin-left:5%;
+#map {
+    min-height: 180px;
+    min-width: 100%;
     margin-top:5%;
-    border-radius:5%;
-    border-top:2px solid black;
-    border-bottom:2px solid black;
+    margin-bottom:5%;
 }
 
-.whattodo-type h2 {
-    margin-top:50px;
-    padding-top: 15px;
-    text-transform:uppercase;
-    padding-bottom:15px;
-    text-align:center;
-    font-size:1em;
-    font-weight:900;
+.whattodo-type {
+    display:block;
+    margin:auto;
 }
+
+
+.btn-bg-activity {
+    background-color: lightgrey;
+    border-radius:10%;
+    margin-right:2%;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-size:18px;
+    font-weight:900;
+    border:5px solid rgb(212, 230, 241 );
+    border-radius:5%;
+}
+
+.btn-bg-activity:hover {
+    background-color: rgb(127, 179, 213);
+    color:white;
+}
+
 .whattodo-details {
     border-radius:5%;
     border-left:2px solid black;
     border-right:2px solid black;
     margin-top:5%;
-    margin-left:3%;
 }
 
+.whattodo-details p {
+    text-align:center;
+}
+
+.whattodo-details h3 {
+    text-align:center;
+    font-weight:900;
+    font-size:25px;
+    padding:5px;
+}
 .whattodo-title {
     text-align:center;
     margin-top:5%;
@@ -344,6 +364,11 @@ margin-bottom: 10%;
     background-color:rgb(212, 230, 241 );
     margin-left:auto;
     margin-right:auto;
+    margin-bottom:3%;
+}
+
+.btn-activity-position {
+    margin-right:15%;
 }
 
 @media only screen and (max-width: 1000px) {
