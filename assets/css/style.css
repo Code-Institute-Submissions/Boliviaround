@@ -295,7 +295,8 @@ margin-bottom: 10%;
 .btn-bg {
     background-color: rgb(212, 230, 241 ); 
     border-radius:10%;
-    max-width:150px;
+    max-width:115px;
+    border:3px solid lightgray;
 }
 
 .btn-bg:hover {
@@ -317,22 +318,15 @@ margin-bottom: 10%;
     margin-bottom:5%;
 }
 
-.whattodo-type {
-    display:block;
-    margin:auto;
-}
-
-
 .btn-bg-activity {
     background-color: lightgrey;
-    border-radius:10%;
     margin-right:2%;
     text-transform:uppercase;
     letter-spacing: 2px;
-    font-size:18px;
+    font-size:16px;
     font-weight:900;
     border:5px solid rgb(212, 230, 241 );
-    border-radius:5%;
+    border-radius:20%;
 }
 
 .btn-bg-activity:hover {
@@ -367,9 +361,21 @@ margin-bottom: 10%;
     margin-bottom:3%;
 }
 
-.btn-activity-position {
-    margin-right:15%;
+
+@media only screen and (min-width: 1000px) {
+.btn-bg {
+    margin:2%;
+};
 }
+@media only screen and (max-width: 1000px) {
+.btn-activity-position {
+    display:block;
+    margin:auto;
+    margin-top:5%;
+    margin-bottom:5%;
+}
+
+};
 
 @media only screen and (max-width: 1000px) {
 .whattodo-type h2 {
