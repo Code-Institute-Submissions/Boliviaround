@@ -296,7 +296,6 @@ margin-bottom: 10%;
     background-color: rgb(212, 230, 241 ); 
     border-radius:10%;
     max-width:115px;
-    border:3px solid lightgray;
 }
 
 .btn-bg:hover {
@@ -313,24 +312,85 @@ margin-bottom: 10%;
 
 #map {
     min-height: 180px;
-    min-width: 100%;
+    min-width: 90%;
     margin-top:5%;
     margin-bottom:5%;
 }
 
 .btn-bg-activity {
-    background-color: lightgrey;
-    margin-right:2%;
+    color:white;
+    margin-left:2%;
     text-transform:uppercase;
     letter-spacing: 2px;
     font-size:16px;
     font-weight:900;
-    border:5px solid rgb(212, 230, 241 );
-    border-radius:20%;
+    border-radius:5%;
 }
 
-.btn-bg-activity:hover {
-    background-color: rgb(127, 179, 213);
+.btn-party {
+    padding:30px 70px;
+    border:3px solid darkslategray;
+    background: url("../img/party.jpg") center center;
+}
+
+.btn-party:hover {
+    color:white;
+}
+
+@media only screen and (min-width: 1050px) {
+.btn-party {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+.btn-party:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+
+.btn-adventure {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+.btn-adventure:hover {
+    color:white;
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+.btn-food {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;}
+
+.btn-food:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+}
+
+.btn-adventure {
+    padding:30px 50px;
+    border:3px solid darkslategray;
+    background: url("../img/adventure.jpg") center center;
+}
+
+.btn-adventure:hover {
+    color:white;
+}
+
+.btn-food {
+    padding:30px 70px;
+    border:3px solid darkslategray;
+    background: url("../img/food.jpg") center center;
+}
+
+.btn-food:hover {
     color:white;
 }
 
