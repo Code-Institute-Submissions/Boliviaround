@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" /> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -91,35 +92,145 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-md-12">
                             <div class="btn-activity-position">
-                            <button type="submit" class="btn btn-party btn-bg-activity btn-activity-position">
-                                Party
-                            </button>
-                            <button type="submit" class="btn btn-adventure btn-bg-activity btn-activity-position">
-                                Adventure
-                            </button>
-                            <button type="submit" class="btn btn-food btn-bg-activity btn-activity-position">
-                                Food
-                            </button>
+                                <button id = "btn-party" class="btn btn-party btn-bg-activity btn-activity-position">
+                                    Party
+                                </button>
+                                <button id="btn-adventure" class="btn btn-adventure btn-bg-activity btn-activity-position">
+                                    Adventure
+                                </button>
+                                <button id = "btn-food" class="btn btn-food btn-bg-activity btn-activity-position">
+                                    Food
+                                </button>
                             </div>
                         </div>
                     </div>
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-md-12 whattodo-details">
-                            <div class="description">
-                                <h3>Salar d'Uyuni</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-                            </div>
-                            <div class="row justify-content-center">
-                                    <button type="submit" class="btn btn-bg btn-bg btn-activity-position"><strong>Adventure 1</strong></button>
-                                    <button type="submit" class="btn btn-bg btn-activity-position"><strong>Adventure 2</strong></button>
-                                    <button type="submit" class="btn btn-bg btn-activity-position"><strong>Adventure 3</strong></button>
+                            <div class="description adventures">
+                                <div class="description-salar-duyuni">
+                                    <h3>Salar d'Uyuni</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn-salar btn btn-bg btn-activity-position"><strong>Salar d'Uyuni</strong></button>
+                                        <button type="submit" class="btn-eduardo btn btn-bg btn-activity-position"><strong>Reserve E. Avaroa</strong></button>
+                                        <button type="submit" class="btn-yungaz btn btn-bg btn-activity-position"><strong>Yungaz Road</strong></button>
+                                    </div>
                                     <div id="map"></div>
+                                </div>
+                                <div class="description-eduardo-avaroa">
+                                    <h3>National Reserve Eduardo Avaroa</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn-salar btn btn-bg btn-activity-position"><strong>Salar d'Uyuni</strong></button>
+                                        <button type="submit" class="btn-eduardo btn btn-bg btn-activity-position"><strong>Reserve E. Avaroa</strong></button>
+                                        <button type="submit" class="btn-yungaz btn btn-bg btn-activity-position"><strong>Yungaz Road</strong></button>
+                                    </div>    
+                                    <div id="map-eduardo"></div>
+                                </div>
+                                <div class="description-yungaz-road">
+                                    <h3>Yungaz Road</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn-salar btn btn-bg btn-activity-position"><strong>Salar d'Uyuni</strong></button>
+                                        <button type="submit" class="btn-eduardo btn btn-bg btn-activity-position"><strong>Reserve E. Avaroa</strong></button>
+                                        <button type="submit" class="btn-yungaz btn btn-bg btn-activity-position"><strong>Yungaz Road</strong></button>
+                                    </div>
+                                    <div id="map-yungaz"></div>
+                                </div>
                             </div>
+                            <div class="description food">
+                                <div class="description-gustu">
+                                    <h3>Gustu</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn-gustu btn btn-bg btn-activity-position"><strong>Gustu</strong></button>
+                                        <button type="submit" class="btn-elhuerto btn btn-bg btn-activity-position"><strong>El Huerto</strong></button>
+                                        <button type="submit" class="btn-choriceria btn btn-bg btn-activity-position"><strong>Choriceria</strong></button>
+                                    </div>
+                                    <div id="map-gustu"></div>
+                                </div>
+                                <div class="description-elhuerto">
+                                    <h3>El Huerto</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn-gustu btn btn-bg btn-activity-position"><strong>Gustu</strong></button>
+                                        <button type="submit" class="btn-elhuerto btn btn-bg btn-activity-position"><strong>El Huerto</strong></button>
+                                        <button type="submit" class="btn-choriceria btn btn-bg btn-activity-position"><strong>Choriceria</strong></button>
+                                    </div>
+                                    <div id="map-elhuerto"></div>
+                                </div>
+                                <div class="description-choriceria">
+                                    <h3>Choriceria "7 Lunares"</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn-gustu btn btn-bg btn-activity-position"><strong>Gustu</strong></button>
+                                        <button type="submit" class="btn-elhuerto btn btn-bg btn-activity-position"><strong>El Huerto</strong></button>
+                                        <button type="submit" class="btn-choriceria btn btn-bg btn-activity-position"><strong>Choriceria</strong></button>
+                                    </div>
+                                    <div id="map-choriceria"></div>
+                                </div>
+                            </div>
+                            <div class="description party">
+                                <div class="description-diesel">
+                                    <h3>Diesel Nacional</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn-diesel btn btn-bg btn-activity-position"><strong>Diesel</strong></button>
+                                        <button type="submit" class="btn-kultur btn btn-bg btn-activity-position"><strong>Kultur</strong></button>
+                                        <button type="submit" class="btn-bymz btn btn-bg btn-activity-position"><strong>Bymz</strong></button>
+                                    </div>
+                                    <div id="map-diesel"></div>
+                                </div>
+                                <div class="description-kultur">
+                                    <h3>Kultur Berlin Hostel</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn-diesel btn btn-bg btn-activity-position"><strong>Diesel</strong></button>
+                                        <button type="submit" class="btn-kultur btn btn-bg btn-activity-position"><strong>Kultur</strong></button>
+                                        <button type="submit" class="btn-bymz btn btn-bg btn-activity-position"><strong>Bymz</strong></button>
+                                    </div>
+                                    <div id="map-kultur"></div>
+                                </div>
+                                <div class="description-bymz">
+                                    <h3>Bymz Bar</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                                        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <div class="row justify-content-center">
+                                        <button type="submit" class="btn-diesel btn btn-bg btn-activity-position"><strong>Diesel</strong></button>
+                                        <button type="submit" class="btn-kultur btn btn-bg btn-activity-position"><strong>Kultur</strong></button>
+                                        <button type="submit" class="btn-bymz btn btn-bg btn-activity-position"><strong>Bymz</strong></button>
+                                    </div>
+                                    <div id="map-bymz"></div>
+                                </div>
                             </div>
                         </div>
+                    </div>
                     </div>
             </section>
 
@@ -242,5 +353,6 @@
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjDl_1sMILKl7VyHqlBRxE4Moif3iW64g&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
+    <script src="assets/js/script.js"></script>
     <script src="assets/js/emails.js"></script>
 </html>
