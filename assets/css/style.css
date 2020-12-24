@@ -15,7 +15,6 @@ h2 {
 /*----------Hero image : Code inspired by CSS module "Love Running" of Code Institute */
 
 #hero-image img {
-    margin-top:75px;
     height:450px;
     width:100%;
     background-size: cover;
@@ -47,12 +46,6 @@ h2 {
 
 /*--- End of code inspired by CSS module "Love Running" of Code Institute */
 
-.active a {
-    border-bottom: 1px solid darkslategray;
-    border-radius: 10%;
-    font-weight: 800;
-}
-
 .nav-link {
     letter-spacing: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -70,13 +63,7 @@ h2 {
 .navbar {
     background-color: rgb(212, 230, 241);  
     padding-top:20px;
-    padding-bottom: 20px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10000;
-    overflow: hidden;
+    padding-bottom: 20px;   
 }
 
 
@@ -103,13 +90,17 @@ h2 {
     margin-bottom: 80px;
 }
 
+.section-top {
+    margin-top:75px;
+}
+
 #footer-section {
+    background-color:rgb(212, 230, 241);
     left: 0;
     bottom: 0;
     width: 100%;
     height: 40px;
     margin-top: 20px;
-    background-color:rgb(212, 230, 241 );
 }
 
 .footer-list {
@@ -310,7 +301,7 @@ margin-bottom: 10%;
 
 /**---What to do section ----*/
 
-#map-canvas {
+#map {
     min-height: 300px;
     min-width: 90%;
     margin-top:5%;

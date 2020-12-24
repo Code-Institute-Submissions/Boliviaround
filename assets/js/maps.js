@@ -3,8 +3,8 @@
  & Stack Overflow : https://stackoverflow.com/questions/28499141/how-to-change-google-map-center-by-clicking-a-button/28500306 */
 
 function initialize () {
-            var map = new google.maps.Map(document.getElementById("map-canvas"), {
-                zoom: 9,
+            var map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
                 center: {
                     lat: -20.012628599701625, 
                     lng: -67.81195422417898
@@ -14,13 +14,12 @@ function initialize () {
             var labels = "";
 
             var locations = [
+                {lat: -21.533319122582853, lng: -64.73381610468566},
                 {lat: -18.890052731395137, lng: -66.75225678903733},
                 {lat: -17.785521446880388, lng: -63.180204218666496},
                 {lat: -20.012628599701625, lng: -67.81195422417898},
-                {lat: -18.890052731395137, lng: -66.75225678903733},
                 {lat: -16.264692546146286, lng: -67.78893702608976},
                 {lat: -16.5445410118336, lng: -68.08655004495911},
-                {lat: -19.037201903024396, lng: -65.2622114744638},
                 {lat: -19.045374104018236, lng: -65.25827944562785},
                 ];
 
@@ -36,7 +35,7 @@ function initialize () {
             });
         
 
-  google.maps.event.addDomListener(document.getElementById('map-canvas'), 'click', function () {
+  google.maps.event.addDomListener(document.getElementById('map'), 'click', function () {
   
 });
 
@@ -96,9 +95,9 @@ $(document).ready(function ()
 	  newLocation(-16.5445410118336, -68.08655004495911);
     });
 
-    $(".btn-elhuerto").on('click', function ()
+    $(".btn-gattopardo").on('click', function ()
     {
-	  newLocation(-19.037201903024396, -65.2622114744638);
+	  newLocation(-21.533319122582853, -64.73381610468566);
     });
 
     /**Party */

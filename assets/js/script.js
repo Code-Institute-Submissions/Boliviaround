@@ -2,7 +2,7 @@
   $(".description-salar-duyuni").show();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-eduardo-avaroa").hide();
   $(".description-bymz").hide();
@@ -14,7 +14,7 @@ $("#btn-adventure").click(function(){
   $(".description-salar-duyuni").show();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
   $(".description-kultur").hide();
@@ -27,7 +27,7 @@ $(".btn-salar").click(function(){
   $(".description-salar-duyuni").show();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
   $(".description-kultur").hide();
@@ -38,7 +38,7 @@ $(".btn-eduardo").click(function(){
   $(".description-salar-duyuni").hide();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
   $(".description-kultur").hide();
@@ -49,7 +49,7 @@ $(".btn-yungaz").click(function(){
   $(".description-salar-duyuni").hide();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").show();
   $(".description-bymz").hide();
   $(".description-kultur").hide();
@@ -62,7 +62,7 @@ $("#btn-food").click(function(){
   $(".description-salar-duyuni").hide();
   $(".description-gustu").show();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
   $(".description-kultur").hide();
@@ -73,7 +73,7 @@ $(".btn-gustu").click(function(){
   $(".description-salar-duyuni").hide();
   $(".description-gustu").show();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
   $(".description-kultur").hide();
@@ -84,18 +84,18 @@ $(".btn-choriceria").click(function(){
   $(".description-salar-duyuni").hide();
   $(".description-gustu").hide();
   $(".description-choriceria").show();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
   $(".description-kultur").hide();
   $(".description-diesel").hide();
   $(".description-eduardo-avaroa").hide();});
 
-$(".btn-elhuerto").click(function(){
+$(".btn-gattopardo").click(function(){
   $(".description-salar-duyuni").hide();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").show();
+  $(".description-gattopardo").show();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
   $(".description-kultur").hide();
@@ -108,7 +108,7 @@ $("#btn-party").click(function(){
   $(".description-salar-duyuni").hide();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
   $(".description-kultur").hide();
@@ -119,7 +119,7 @@ $(".btn-diesel").click(function(){
   $(".description-salar-duyuni").hide();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
   $(".description-kultur").hide();
@@ -130,7 +130,7 @@ $(".btn-kultur").click(function(){
   $(".description-salar-duyuni").hide();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
-  $(".description-elhuerto").hide();
+  $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
   $(".description-kultur").show();
