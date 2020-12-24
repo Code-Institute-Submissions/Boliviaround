@@ -311,7 +311,7 @@ margin-bottom: 10%;
 /**---What to do section ----*/
 
 #map-canvas {
-    min-height: 180px;
+    min-height: 300px;
     min-width: 90%;
     margin-top:5%;
     margin-bottom:5%;
