@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" /> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -118,7 +119,6 @@
                                         <button type="submit" class="btn-eduardo btn btn-bg btn-activity-position"><strong>Reserve E. Avaroa</strong></button>
                                         <button type="submit" class="btn-yungaz btn btn-bg btn-activity-position"><strong>Yungaz Road</strong></button>
                                     </div>
-                                    <div id="map"></div>
                                 </div>
                                 <div class="description-eduardo-avaroa">
                                     <h3>National Reserve Eduardo Avaroa</h3>
@@ -131,7 +131,6 @@
                                         <button type="submit" class="btn-eduardo btn btn-bg btn-activity-position"><strong>Reserve E. Avaroa</strong></button>
                                         <button type="submit" class="btn-yungaz btn btn-bg btn-activity-position"><strong>Yungaz Road</strong></button>
                                     </div>    
-                                    <div id="map-eduardo"></div>
                                 </div>
                                 <div class="description-yungaz-road">
                                     <h3>Yungaz Road</h3>
@@ -144,7 +143,6 @@
                                         <button type="submit" class="btn-eduardo btn btn-bg btn-activity-position"><strong>Reserve E. Avaroa</strong></button>
                                         <button type="submit" class="btn-yungaz btn btn-bg btn-activity-position"><strong>Yungaz Road</strong></button>
                                     </div>
-                                    <div id="map-yungaz"></div>
                                 </div>
                             </div>
                             <div class="description food">
@@ -159,7 +157,6 @@
                                         <button type="submit" class="btn-elhuerto btn btn-bg btn-activity-position"><strong>El Huerto</strong></button>
                                         <button type="submit" class="btn-choriceria btn btn-bg btn-activity-position"><strong>Choriceria</strong></button>
                                     </div>
-                                    <div id="map-gustu"></div>
                                 </div>
                                 <div class="description-elhuerto">
                                     <h3>El Huerto</h3>
@@ -172,7 +169,6 @@
                                         <button type="submit" class="btn-elhuerto btn btn-bg btn-activity-position"><strong>El Huerto</strong></button>
                                         <button type="submit" class="btn-choriceria btn btn-bg btn-activity-position"><strong>Choriceria</strong></button>
                                     </div>
-                                    <div id="map-elhuerto"></div>
                                 </div>
                                 <div class="description-choriceria">
                                     <h3>Choriceria "7 Lunares"</h3>
@@ -185,7 +181,6 @@
                                         <button type="submit" class="btn-elhuerto btn btn-bg btn-activity-position"><strong>El Huerto</strong></button>
                                         <button type="submit" class="btn-choriceria btn btn-bg btn-activity-position"><strong>Choriceria</strong></button>
                                     </div>
-                                    <div id="map-choriceria"></div>
                                 </div>
                             </div>
                             <div class="description party">
@@ -200,7 +195,6 @@
                                         <button type="submit" class="btn-kultur btn btn-bg btn-activity-position"><strong>Kultur</strong></button>
                                         <button type="submit" class="btn-bymz btn btn-bg btn-activity-position"><strong>Bymz</strong></button>
                                     </div>
-                                    <div id="map-diesel"></div>
                                 </div>
                                 <div class="description-kultur">
                                     <h3>Kultur Berlin Hostel</h3>
@@ -213,7 +207,6 @@
                                         <button type="submit" class="btn-kultur btn btn-bg btn-activity-position"><strong>Kultur</strong></button>
                                         <button type="submit" class="btn-bymz btn btn-bg btn-activity-position"><strong>Bymz</strong></button>
                                     </div>
-                                    <div id="map-kultur"></div>
                                 </div>
                                 <div class="description-bymz">
                                     <h3>Bymz Bar</h3>
@@ -226,12 +219,12 @@
                                         <button type="submit" class="btn-kultur btn btn-bg btn-activity-position"><strong>Kultur</strong></button>
                                         <button type="submit" class="btn-bymz btn btn-bg btn-activity-position"><strong>Bymz</strong></button>
                                     </div>
-                                    <div id="map-bymz"></div>
                                 </div>
                             </div>
+                            <div id="map-canvas"></div>
                         </div>
                     </div>
-                    </div>
+                </div>
             </section>
 
         <!--Testimony section-->
@@ -351,6 +344,7 @@
             </div>
         </footer>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjDl_1sMILKl7VyHqlBRxE4Moif3iW64g&callback=initialize"></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjDl_1sMILKl7VyHqlBRxE4Moif3iW64g&callback=initMap"></script>
     <script src="assets/js/maps.js"></script>
     <script src="assets/js/script.js"></script>
