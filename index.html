@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" /> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
@@ -23,7 +22,7 @@
     <body>
         <!-- Navbar: Code from Bootstrap-->
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
                 <a class="navbar-brand" href="index.html"><h1><strong>BoliviA</strong>round</h1></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -55,14 +54,17 @@
             <!-- End of the code inspired by hero-image code in CSS Code institute Module (Love Running)-->
         <div class="page-content">
         <!-- Section Why? -->
-            <div class="section-top">
-                <section id ="why">
+            <section id ="why">
                     <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-5 col-sm-12">
-                            <div class="bg-color-why">
-                                <h2>Why Bolivia?</h2>
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-11 col-sm-12 whattodo-title">
+                                    <h2><strong>Why Bolivia?</strong></h2>
+                                </div>
                             </div>
+                        <div class="row justify-content-center">
+                            <div class="col-lg-5 col-sm-10">
+                                <div class="bg-color-why">
+                                </div>
                             </div>
                             <div class="col-lg-6 col-sm-12 bg-color-description-why">
                                 <div class="text-why">
@@ -79,11 +81,9 @@
                             </div>
                         </div>
                     </div>
-                </section>
-            </div>
+            </section>
         <!-- End of section Why? -->
         <!-- Section What to do? -->
-            <div class="section-top">
                 <section id="what">
                     <div class="container">
                             <div class="row justify-content-center">
@@ -92,15 +92,15 @@
                                 </div>
                             </div>
                             <div class="row justify-content-center">
-                                <div class="col-lg-8 col-md-12">
+                                <div class="col-xl-8 col-lg-12">
                                     <div class="btn-activity-position">
-                                        <button id = "btn-party" class="btn btn-party btn-bg-activity btn-activity-position">
+                                        <button id = "btn-party" class="btn btn-party btn-bg-activity btn-sm-center">
                                             Party
                                         </button>
-                                        <button id="btn-adventure" class="btn btn-adventure btn-bg-activity btn-activity-position">
+                                        <button id="btn-adventure" class="btn btn-adventure btn-bg-activity btn-sm-center">
                                             Adventure
                                         </button>
-                                        <button id = "btn-food" class="btn btn-food btn-bg-activity btn-activity-position">
+                                        <button id = "btn-food" class="btn btn-food btn-bg-activity btn-sm-center">
                                             Food
                                         </button>
                                     </div>
@@ -111,126 +111,125 @@
                                     <div class="description adventures">
                                         <div class="description-salar-duyuni">
                                             <h3>Salar d'Uyuni</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <p>This place is the largest salt desert of the world - offering you one of the most authentical
+                                                experience of Bolivia. The immensity of these salt crystals would amaze you. Spending 3 days in this desert won't even feel enought!
+                                                <br> Trust us when we 
+                                                assert this experience will be an unforgettable one!
                                             </p>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn-salar btn btn-bg btn-activity-position"><strong>Salar d'Uyuni</strong></button>
-                                                <button type="submit" class="btn-eduardo btn btn-bg btn-activity-position"><strong>Reserve E. Avaroa</strong></button>
-                                                <button type="submit" class="btn-yungaz btn btn-bg btn-activity-position"><strong>Yungaz Road</strong></button>
+                                                <button type="submit" class="btn-salar btn btn-bg"><strong>Salar d'Uyuni</strong></button>
+                                                <button type="submit" class="btn-eduardo btn btn-bg"><strong>Reserve E. Avaroa</strong></button>
+                                                <button type="submit" class="btn-yungaz btn btn-bg"><strong>Yungaz Road</strong></button>
                                             </div>
                                         </div>
                                         <div class="description-eduardo-avaroa">
                                             <h3>National Reserve Eduardo Avaroa</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <p>Sand and salt deserts, lagoons, geysers, 
+                                                and countless natural wonders are waiting for you in the Eduardo Avaroa
+                                                National Reserve. <br>
+                                                You won't regret the experience!
                                             </p>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn-salar btn btn-bg btn-activity-position"><strong>Salar d'Uyuni</strong></button>
-                                                <button type="submit" class="btn-eduardo btn btn-bg btn-activity-position"><strong>Reserve E. Avaroa</strong></button>
-                                                <button type="submit" class="btn-yungaz btn btn-bg btn-activity-position"><strong>Yungaz Road</strong></button>
+                                                <button type="submit" class="btn-salar btn btn-bg"><strong>Salar d'Uyuni</strong></button>
+                                                <button type="submit" class="btn-eduardo btn btn-bg"><strong>Reserve E. Avaroa</strong></button>
+                                                <button type="submit" class="btn-yungaz btn btn-bg"><strong>Yungaz Road</strong></button>
                                             </div>    
                                         </div>
                                         <div class="description-yungaz-road">
                                             <h3>Yungaz Road</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <p>Ready for high sensations while cycling through incredible landscapes? The Yungas Road is an ancient Bolivian road transformed into a cycle path 
+                                                linking La Paz to Coroico. This road is 80 kilometres long. His northern section 
+                                                was previously called the "Death Route". <br>
+                                                Ready for the challenge?.
                                             </p>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn-salar btn btn-bg btn-activity-position"><strong>Salar d'Uyuni</strong></button>
-                                                <button type="submit" class="btn-eduardo btn btn-bg btn-activity-position"><strong>Reserve E. Avaroa</strong></button>
-                                                <button type="submit" class="btn-yungaz btn btn-bg btn-activity-position"><strong>Yungaz Road</strong></button>
+                                                <button type="submit" class="btn-salar btn btn-bg"><strong>Salar d'Uyuni</strong></button>
+                                                <button type="submit" class="btn-eduardo btn btn-bg"><strong>Reserve E. Avaroa</strong></button>
+                                                <button type="submit" class="btn-yungaz btn btn-bg"><strong>Yungaz Road</strong></button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="description food">
                                         <div class="description-gustu">
                                             <h3>Gustu</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <p> Gustu is the quechua word meaning "savor". Easy to assert this restaurant serving
+                                                latin american food is a necessary step during your trip in La Paz.
                                             </p>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn-gustu btn btn-bg btn-activity-position"><strong>Gustu</strong></button>
-                                                <button type="submit" class="btn-gattopardo btn btn-bg btn-activity-position"><strong>Gattopardo</strong></button>
-                                                <button type="submit" class="btn-choriceria btn btn-bg btn-activity-position"><strong>Choriceria</strong></button>
+                                                <button type="submit" class="btn-gustu btn btn-bg"><strong>Gustu</strong></button>
+                                                <button type="submit" class="btn-gattopardo btn btn-bg"><strong>Gattopardo</strong></button>
+                                                <button type="submit" class="btn-choriceria btn btn-bg"><strong>Choriceria</strong></button>
                                             </div>
                                         </div>
                                         <div class="description-gattopardo">
                                             <h3>Gattopardo</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <p>Craving for a unique experience in the middle of your adventures?
+                                                Gattopardo is an amazing place to share unforgettable meals while enjoying
+                                                a warming decoration in the center of Tarija.
                                             </p>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn-gustu btn btn-bg btn-activity-position"><strong>Gustu</strong></button>
-                                                <button type="submit" class="btn-gattopardo btn btn-bg btn-activity-position"><strong>Gattopardo</strong></button>
-                                                <button type="submit" class="btn-choriceria btn btn-bg btn-activity-position"><strong>Choriceria</strong></button>
+                                                <button type="submit" class="btn-gustu btn btn-bg"><strong>Gustu</strong></button>
+                                                <button type="submit" class="btn-gattopardo btn btn-bg"><strong>Gattopardo</strong></button>
+                                                <button type="submit" class="btn-choriceria btn btn-bg"><strong>Choriceria</strong></button>
                                             </div>
                                         </div>
                                         <div class="description-choriceria">
                                             <h3>Choriceria "7 Lunares"</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <p>Looking for a treat ? 
+                                                <br>Choriceria is the place to be to eat delicious chorizos as a snack - or (why not?) as a main meal!
                                             </p>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn-gustu btn btn-bg btn-activity-position"><strong>Gustu</strong></button>
-                                                <button type="submit" class="btn-gattopardo btn btn-bg btn-activity-position"><strong>Gattopardo</strong></button>
-                                                <button type="submit" class="btn-choriceria btn btn-bg btn-activity-position"><strong>Choriceria</strong></button>
+                                                <button type="submit" class="btn-gustu btn btn-bg"><strong>Gustu</strong></button>
+                                                <button type="submit" class="btn-gattopardo btn btn-bg"><strong>Gattopardo</strong></button>
+                                                <button type="submit" class="btn-choriceria btn btn-bg"><strong>Choriceria</strong></button>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="description party">
                                         <div class="description-diesel">
                                             <h3>Diesel Nacional</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <p>Looking forward to party and enjoy every bit of your lifenight in Bolivia?
+                                                Located in La Paz, Diesel Nacional is the place to be for nice food, affordable cocktails, great meetings,
+                                                and lifetime experience.
                                             </p>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn-diesel btn btn-bg btn-activity-position"><strong>Diesel</strong></button>
-                                                <button type="submit" class="btn-kultur btn btn-bg btn-activity-position"><strong>Kultur</strong></button>
-                                                <button type="submit" class="btn-bymz btn btn-bg btn-activity-position"><strong>Bymz</strong></button>
+                                                <button type="submit" class="btn-diesel btn btn-bg"><strong>Diesel</strong></button>
+                                                <button type="submit" class="btn-kultur btn btn-bg"><strong>Kultur</strong></button>
+                                                <button type="submit" class="btn-bymz btn btn-bg"><strong>Bymz</strong></button>
                                             </div>
                                         </div>
                                         <div class="description-kultur">
                                             <h3>Kultur Berlin Hostel</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <p>In the center of Sucre, the Kultur Berlin hostel is known to be a place of fun and joy.
+                                                This wonderful destination offers you daily events and the best parties in town.
+                                                And last but not least : they got multiple awards as the best breakfast place in Latin America.
+                                                Don't think twice before booking!
                                             </p>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn-diesel btn btn-bg btn-activity-position"><strong>Diesel</strong></button>
-                                                <button type="submit" class="btn-kultur btn btn-bg btn-activity-position"><strong>Kultur</strong></button>
-                                                <button type="submit" class="btn-bymz btn btn-bg btn-activity-position"><strong>Bymz</strong></button>
+                                                <button type="submit" class="btn-diesel btn btn-bg"><strong>Diesel</strong></button>
+                                                <button type="submit" class="btn-kultur btn btn-bg"><strong>Kultur</strong></button>
+                                                <button type="submit" class="btn-bymz btn btn-bg"><strong>Bymz</strong></button>
                                             </div>
                                         </div>
                                         <div class="description-bymz">
                                             <h3>Bymz Bar</h3>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                                ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            <p> Interested in crazy music as well as great atmosphere to party all night? Bymz Bar is there to welcome you while making out-of-ordinary cocktails. 
+                                                <br> Do not go through Santa Cruz without making a little jump there!
                                             </p>
                                             <div class="row justify-content-center">
-                                                <button type="submit" class="btn-diesel btn btn-bg btn-activity-position"><strong>Diesel</strong></button>
-                                                <button type="submit" class="btn-kultur btn btn-bg btn-activity-position"><strong>Kultur</strong></button>
-                                                <button type="submit" class="btn-bymz btn btn-bg btn-activity-position"><strong>Bymz</strong></button>
+                                                <button type="submit" class="btn-diesel btn btn-bg"><strong>Diesel</strong></button>
+                                                <button type="submit" class="btn-kultur btn btn-bg"><strong>Kultur</strong></button>
+                                                <button type="submit" class="btn-bymz btn btn-bg"><strong>Bymz</strong></button>
                                             </div>
                                         </div>
                                     </div>
                                     <div id="map"></div>
                                 </div>
                             </div>
-                        </div>
+                    </div>
                 </section>
-            </div>
 
         <!--Testimony section-->
-            <div class="section-top">
                 <section id="testimonies">
                     <div class="container">
                         <div class="row justify-content-center">
@@ -247,9 +246,9 @@
                                     <img src="assets/img/testimony1.jpg" alt="testimony-photo"/>
                                 </div>
                                 <div class="testimony-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    <p>As a <strong>solo travelling woman</strong>, I was looking for an agency to organize my trip so as I don't have to worry too much 
+                                        - while offering me enought <strong>flexibility</strong> to enjoy my well deserved holidays!
+                                        <br> <strong>Efficient, open-minded, conscious and affordable</strong> : BoliviAround was the best choice I could have made !
                                         <br>
                                         <strong>
                                             Valentine L. - 27 years old
@@ -262,9 +261,9 @@
                                     <img src="assets/img/testimony2.jpg" alt="testimony-photo"/>
                                 </div>
                                 <div class="testimony-text">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                        ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    <p>For our first travel to Latin America, we decided to let BoliviAround organizes and selects the <strong>best experiences</strong> on our behalf while allowing us a to get feeling of <strong>safety & comfort</strong>.
+                                        This experience was <strong>unforgettable - for all of us </strong>! My 14 years-old son was excited every day by the adventures waiting for us! 
+                                    
                                         <br>
                                         <strong>
                                             Foran Family - 41, 42 and 14 years old
@@ -277,10 +276,9 @@
                                     <img src="assets/img/testimony3.jpg" alt="testimony-photo"/>
                                 </div>
                                 <div class="testimony-text">
-                                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                                        ullamco laboris nisi ut aliquip ex ea commodo consequat." 
-                                        <br>
+                                    <p>What an amazing experience was this trip to Bolivia!
+                                        <br>Cycling through <strong>Yungaz road</strong> (or as they call it there... the <strong>"death road"</strong>) with a group of others adventurers like me was just one of the <strong>best experience of my lifetime</strong>!
+                                        <br><br>
                                         <strong>
                                             Christine W. - 41 years old
                                         </strong>
@@ -291,10 +289,10 @@
                         </div>
                     </div>
                 </section>
-            </div>
+            
         <!-- End of Testimonies Section-->
         <!-- Form Section-->   
-            <div class="section-top">
+            <div class="section-margin">
                 <section id="contact">
                     <div class="container">
                             <div class="row justify-content-center">
@@ -356,3 +354,5 @@
     <script src="assets/js/script.js"></script>
     <script src="assets/js/emails.js"></script>
 </html>
+
+<!--AIzaSyCjDl_1sMILKl7VyHqlBRxE4Moif3iW64g-->

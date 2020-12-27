@@ -18,11 +18,12 @@ h2 {
     height:450px;
     width:100%;
     background-size: cover;
+    margin-top:80px;
 }
 
 @media only screen and (max-width: 500px) {
 #hero-image img {
-    height:200px;
+    height:300px;
     max-width:500px;
 }}
 
@@ -61,11 +62,30 @@ h2 {
 }
 
 .navbar {
-    background-color: rgb(212, 230, 241);  
-    padding-top:20px;
-    padding-bottom: 20px;   
+background-color: rgb(212, 230, 241);
+padding-top:20px;
+padding-bottom:20px;
+position: fixed;
+top: 0;
+z-index: 9999;
+width: 100%;
 }
 
+#why {
+    padding-top:60px;
+}
+
+#what {
+    padding-top:60px;
+}
+
+#testimonies {
+    padding-top:60px;
+}
+
+#contact {
+    padding-top:110px;
+}
 
 @media only screen and (min-width: 700px) {
 .navbar-brand h1 {
@@ -88,10 +108,6 @@ h2 {
 
 .page-content {
     margin-bottom: 80px;
-}
-
-.section-top {
-    margin-top:75px;
 }
 
 #footer-section {
@@ -138,13 +154,14 @@ h2 {
 
 .bg-color-why {
     background: url("../img/why-img.jpg") center center;
+    height:250px;
     padding-top: 5%;
     padding-bottom:5%;
     padding-left: 10%;
     padding-right:10%; 
     margin-left: auto;
     margin-right: auto;
-    margin-top:30px;
+    margin-top:15%;
     margin-bottom:20px;
     border-radius:5%;
 }
@@ -154,7 +171,7 @@ h2 {
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .4s ease-in-out;
-	transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 .bg-color-why:hover {
@@ -166,35 +183,14 @@ h2 {
 
 @media only screen and (max-width: 1050px) {
 .bg-color-why {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
+	-webkit-filter: grayscale(50%);
+	filter: grayscale(50%);
+    height:200px;
 }
 }
 
-.bg-color-why h2 {
-text-transform:uppercase;
-text-align: center;
-margin-top: 20%;
-margin-bottom: 30%;
-font-weight: 600;
-letter-spacing: 5px;
-font-family: 'Padauk', sans-serif;
-}
-
-.bg-color-why h2:hover {
-    font-weight:800;
-}
-
-@media only screen and (max-width: 1000px) {
-.bg-color-why h2 {
-margin-top: 10%;
-margin-bottom: 10%;
-}
-};
 
 .bg-color-description-why{
-    border-top:2px solid darkslategray; 
-    border-bottom:2px solid darkslategray; 
     padding:20px;
 }
 
@@ -250,21 +246,15 @@ margin-bottom: 10%;
     width: 18em
 }
 
-.testimony-content {
-    margin-left:5%;
-}
-
 /**----Form Section----**/
 
 .form-img {
     border-radius:5%;
-    margin-top:20%;
     height:80%;
 }
 
 .form-title {
     text-align:center;
-    margin-top:20%;
     border-radius : 10%;
     background-color:rgb(212, 230, 241 );
 }
@@ -287,6 +277,8 @@ margin-bottom: 10%;
     background-color: rgb(212, 230, 241 ); 
     border-radius:10%;
     max-width:30%;
+    margin-left:0;
+    margin-right:0;
 }
 
 .btn-bg:hover {
@@ -307,6 +299,7 @@ margin-bottom: 10%;
     margin-top:5%;
     margin-bottom:5%;
 }
+
 
 .btn-bg-activity {
     color:white;
@@ -333,7 +326,7 @@ margin-bottom: 10%;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .4s ease-in-out;
-	transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 .btn-party:hover {
@@ -357,7 +350,8 @@ margin-bottom: 10%;
 	-webkit-filter: grayscale(100%);
 	filter: grayscale(100%);
 	-webkit-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;}
+    transition: .4s ease-in-out;
+    }
 
 .btn-food:hover {
 	-webkit-filter: grayscale(0);
@@ -366,7 +360,7 @@ margin-bottom: 10%;
 }
 
 .btn-adventure {
-    padding:30px 50px;
+    padding:30px 47px;
     border:3px solid darkslategray;
     background: url("../img/adventure.jpg") center center;
 }
@@ -376,7 +370,7 @@ margin-bottom: 10%;
 }
 
 .btn-food {
-    padding:30px 70px;
+    padding:30px 73px;
     border:3px solid darkslategray;
     background: url("../img/food.jpg") center center;
 }
@@ -391,6 +385,7 @@ margin-bottom: 10%;
     border-right:2px solid black;
     margin-top:5%;
 }
+
 
 .whattodo-details p {
     text-align:center;
@@ -412,24 +407,41 @@ margin-bottom: 10%;
     margin-bottom:3%;
 }
 
-
-@media only screen and (min-width: 1000px) {
 .btn-bg {
-    margin:2%;
-};
+    margin: 2%;
 }
-@media only screen and (max-width: 1000px) {
+
+
+@media only screen and (min-width: 1050px) {
 .btn-activity-position {
-    display:block;
-    margin:auto;
+    margin-left:5%;
+}
+}
+
+@media only screen and (max-width: 700px) {
+
+.btn-activity-position {
+    margin-left:23%;
     margin-top:5%;
     margin-bottom:5%;
 }
+
+
+.btn-sm-center {
+    margin-top: 5px;
+    margin-bottom:5px;
+}
+
+.btn-bg {
+    margin-left:3px;
+    margin-right:3px;
+    margin-top:5%;
+    margin-bottom:5%;}
 
 };
 
 @media only screen and (max-width: 1000px) {
 .whattodo-type h2 {
     font-size:0.75em;
-}};
-
+}
+};
