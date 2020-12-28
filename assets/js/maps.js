@@ -1,5 +1,5 @@
 
-/** Credit from Code Institution Lesson
+/** Credit : Code Institution Lesson
  & Stack Overflow : https://stackoverflow.com/questions/28499141/how-to-change-google-map-center-by-clicking-a-button/28500306 */
 
 function initialize () {
@@ -68,6 +68,7 @@ $(document).ready(function ()
     });
 
     /**Adventures */
+    
     $(".btn-salar").on('click', function ()
     {
 	  newLocation(-20.012628599701625, -67.81195422417898);

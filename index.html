@@ -4,16 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" /> 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
         <link rel="stylesheet" href="assets/css/style.css">
         <title>BoliviAroud</title>    
-            <script type="text/javascript"
+            <script>
                     src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
             </script>
-            <script type="text/javascript">
+            <script>
             (function(){
                 emailjs.init("user_vM9irJ1ErhNPALqgxjdQa");
         })();
@@ -24,11 +28,11 @@
         <header>
             <nav class="navbar navbar-expand-lg navbar-light navbar-fixed-top">
                 <a class="navbar-brand" href="index.html"><h1><strong>BoliviA</strong>round</h1></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
+                    <ul id ="mainNav" class="navbar-nav ml-auto">
                         <li class="nav-item">
                             <a href="#why" class="nav-link">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -54,7 +58,7 @@
         <!-- End of the code inspired by hero-image code in CSS Code institute Module (Love Running)-->
         <div class="page-content">
             <!-- Section Why? -->
-            <section id ="why">
+            <section id="why">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-md-11 col-sm-12 whattodo-title">
@@ -65,7 +69,7 @@
                         <div class="col-lg-5 col-sm-10">
                             <div class="bg-color-why"></div>
                         </div>
-                        <div class="col-lg-6 col-sm-12 bg-color-description-why">
+                        <div class="col-lg-6 col-sm-12 bg-description-why">
                             <div class="text-why">
                                 <p>
                                     Discover the most astonishing place in the world while enjoying a <strong>delicious weather</strong>, <strong> incredible landscapes</strong>, a
@@ -91,26 +95,24 @@
                             </div>
                         </div>
                         <div class="row justify-content-center">
-                            <div class="col-xl-8 col-md-12">
-                                <div class="btn-activity-position">
-                                    <button id = "btn-party" class="btn btn-party btn-bg-activity btn-sm-center">
+                                <div class="col-xl-8 col-lg-8 col-md-12 btn-activity-position">
+                                    <button id = "btn-party" class="col-xl-4 col-md-4 btn-party btn-bg-activity">
                                         Party
                                     </button>
-                                    <button id="btn-adventure" class="btn btn-adventure btn-bg-activity btn-sm-center">
+                                    <button id="btn-adventure" class="col-xl-3 col-md-3 btn-adventure btn-bg-activity">
                                         Adventure
                                     </button>
-                                    <button id = "btn-food" class="btn btn-food btn-bg-activity btn-sm-center">
+                                    <button id = "btn-food" class="col-xl-4 col-md-4 btn-food btn-bg-activity">
                                         Food
                                     </button>
                                 </div>
-                            </div>
                         </div>
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-md-12 whattodo-details">
                                 <div class="description adventures">
                                     <div class="col-12 description-salar-duyuni">
                                         <img class ="col-xl-4 d-none d-lg-block img-whattodo" src="assets/img/salar-pic.jpg" alt="salar-duyuni"/>    
-                                        <div class="col-xl-8 col-lg-10 description">
+                                        <div class="col-xl-8 col-lg-12 description">
                                             <h3>Salar d'Uyuni</h3>
                                             <p>This place is the largest salt desert of the world - offering you one of the most authentical experience of Bolivia. 
                                             The immensity of these salt crystals would amaze you. 
@@ -126,7 +128,7 @@
                                     </div>
                                     <div class="col-12 description-eduardo-avaroa">
                                         <img class ="col-xl-4 d-none d-lg-block img-whattodo" src="assets/img/eduardo-img.jpg" alt="eduardo-avaroa-reserve"/>    
-                                        <div class="col-xl-8 col-lg-10 description">
+                                        <div class="col-xl-8 col-lg-12 description">
                                             <h3>National Reserve Eduardo Avaroa</h3>
                                             <p>Sand and salt deserts, lagoons, geysers, 
                                                 and countless natural wonders are waiting for you in the Eduardo Avaroa
@@ -142,7 +144,7 @@
                                     </div>
                                     <div class="col-12 description-yungaz-road">
                                         <img class ="col-xl-4 d-none d-lg-block img-whattodo" src="assets/img/yungaz-pic.jpg" alt="yungaz-moto"/>
-                                        <div class="col-xl-8 col-lg-10 description">
+                                        <div class="col-xl-8 col-lg-12 description">
                                             <h3>Yungaz Road</h3>
                                             <p>Ready for high sensations while cycling through incredible landscapes? The Yungas Road is an ancient Bolivian road transformed into a cycle path 
                                                 linking La Paz to Coroico. This road is 80 kilometres long. His northern section 
@@ -160,7 +162,7 @@
                                 <div class="description food">
                                     <div class="col-12 description-gustu">
                                         <img class ="col-xl-4 d-none d-lg-block img-whattodo" src="assets/img/gustu.jpg" alt="gustu"/>
-                                        <div class="col-xl-8 col-lg-10 description">
+                                        <div class="col-xl-8 col-lg-12 description">
                                             <h3>Gustu</h3>
                                             <br>
                                             <p> Gustu is the quechua word meaning "savor". Easy to assert this restaurant serving
@@ -175,7 +177,7 @@
                                     </div>
                                     <div class="col-12 description-gattopardo">
                                         <img class ="col-xl-4 d-none d-lg-block img-whattodo" src="assets/img/gattapardo-pic.jpg" alt="gattapardo"/>
-                                        <div class="col-xl-8 col-lg-10 description">
+                                        <div class="col-xl-8 col-lg-12 description">
                                             <h3>Gattopardo</h3>
                                             <br>
                                             <p>Craving for a unique experience in the middle of your adventures?
@@ -191,7 +193,7 @@
                                     </div>
                                     <div class="col-12 description-choriceria">
                                         <img class ="col-xl-4 d-none d-lg-block img-whattodo" src="assets/img/choriceria-pic.jpg" alt="choriceria"/>
-                                        <div class="col-xl-8 col-lg-10 description">
+                                        <div class="col-xl-8 col-lg-12 description">
                                             <h3>Choriceria "7 Lunares"</h3>
                                             <br>
                                             <p>
@@ -209,7 +211,7 @@
                                 <div class="description party">
                                     <div class="col-12 description-diesel">
                                         <img class ="col-xl-4 d-none d-lg-block img-whattodo" src="assets/img/diesel.jpg" alt="diesel-nacional"/>
-                                        <div class="col-xl-8 col-lg-10 description">
+                                        <div class="col-xl-8 col-lg-12 description">
                                             <h3>Diesel Nacional</h3>
                                             <p>Looking forward to party and enjoy every bit of your lifenight in Bolivia?
                                                 Located in La Paz, Diesel Nacional is the place to be for nice food, affordable cocktails, great meetings,
@@ -224,7 +226,7 @@
                                     </div>
                                     <div class="col-12 description-kultur">
                                         <img class ="col-xl-4 d-none d-lg-block img-whattodo" src="assets/img/kultur.jpg" alt="kultur-hostel"/>
-                                        <div class="col-xl-8 col-lg-10 description">
+                                        <div class="col-xl-8 col-lg-12 description">
                                             <h3>Kultur Berlin Hostel</h3>
                                             <p>In the center of Sucre, the Kultur Berlin hostel is known to be a place of fun and joy.
                                                 This wonderful destination offers you daily events and the best parties in town.
@@ -240,7 +242,7 @@
                                     </div>
                                     <div class="col-12 description-bymz">
                                         <img class ="col-xl-4 d-none d-lg-block img-whattodo" src="assets/img/bymz.jpg" alt="bymz-bar"/>
-                                        <div class="col-xl-8 col-lg-10 description">
+                                        <div class="col-xl-8 col-lg-12 description">
                                             <h3>Bymz Bar</h3>
                                             <p> 
                                                 Interested in crazy music as well as great atmosphere to party all night? Bymz Bar is there to welcome you while making out-of-ordinary cocktails. 
@@ -270,10 +272,10 @@
                         </div>
                     </div>
                     <div class="container-fluid">
-                        <div class="row justify-content-center testimony-content">
+                        <div class="row justify-content-center">
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="testimony-section">
-                                    <img src="assets/img/testimony1.jpg" alt="testimony-photo"/>
+                                    <img src="assets/img/testimony1.jpg" alt="femme-kayak"/>
                                 </div>
                                 <div class="testimony-text">
                                     <p>
@@ -289,7 +291,7 @@
                             </div>
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="testimony-section">
-                                    <img src="assets/img/testimony2.jpg" alt="testimony-photo"/>
+                                    <img src="assets/img/testimony2.jpg" alt="group-of-happy-people"/>
                                 </div>
                                 <div class="testimony-text">
                                     <p>
@@ -305,7 +307,7 @@
                             </div>
                             <div class="col-lg-4 d-none d-lg-block">
                                 <div class="testimony-section">
-                                    <img src="assets/img/testimony3.jpg" alt="testimony-photo"/>
+                                    <img src="assets/img/testimony3.jpg" alt="woman-looking-away"/>
                                 </div>
                                 <div class="testimony-text">
                                     <p>
@@ -337,7 +339,7 @@
                                         <h2><strong>Ready for Adventure?</strong></h2>
                                     </div>
                                 </div>
-                                <div class="form-position col-lg-12 col-md-10 col-sm-8">
+                                <div class="col-lg-12 col-md-10 col-sm-8 form-position">
                                     <form onsubmit="return sendMail(this);" id="form-section">
                                         <div class="form-group">
                                             <label for="name"><strong>Name</strong></label>
@@ -348,7 +350,7 @@
                                             <input type="text" name="surname" class="form-control" id="surname" placeholder="Surname" required>
                                         </div> 
                                         <div class="form-group">
-                                            <label for="email"><strong>Email</strong></label>
+                                            <label for="emailaddress"><strong>Email</strong></label>
                                             <input type="email" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required>
                                         </div>
                                         <div class="form-group">
@@ -367,20 +369,21 @@
                 </section>
             <!-- End of Form Section-->
         </div>
+        <footer>
+            <div id="footer-section">
+                <ul style="margin-left:0px;padding-left:0px;" class="footer-list">
+                    <li><a href="https://youtube.com" target="_blank" class="hvr-grow"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="https://facebook.com" target="_blank" class="hvr-grow"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="https://instagram.com" target="_blank" class="hvr-grow"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://pinterest.com" target="_blank" class="hvr-grow"><i class="fab fa-pinterest"></i></a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjDl_1sMILKl7VyHqlBRxE4Moif3iW64g&callback=initialize"></script>
+        <script src="assets/js/maps.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script src="assets/js/emails.js"></script>
+        <script src="assets/js/menu.js"></script>
     </body>
-    <footer>
-        <div id="footer-section">
-            <ul style="margin-left:0px;padding-left:0px;" class="footer-list">
-                <li><a href="https://youtube.com" target="_blank" class="hvr-grow"><i class="fab fa-youtube"></i></a></li>
-                <li><a href="https://facebook.com" target="_blank" class="hvr-grow"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="https://instagram.com" target="_blank" class="hvr-grow"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://pinterest.com" target="_blank" class="hvr-grow"><i class="fab fa-pinterest"></i></a></li>
-            </ul>
-        </div>
-    </footer>
-    <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjDl_1sMILKl7VyHqlBRxE4Moif3iW64g&callback=initialize"></script>
-    <script src="assets/js/maps.js"></script>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/emails.js"></script>
 </html>

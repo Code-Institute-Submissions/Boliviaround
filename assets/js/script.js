@@ -21,8 +21,6 @@ $("#btn-adventure").click(function(){
   $(".description-diesel").hide();
   $(".description-eduardo-avaroa").hide();});
 
-/**2) Small buttons */
-
 $(".btn-salar").click(function(){
   $(".description-salar-duyuni").show();
   $(".description-gustu").hide();

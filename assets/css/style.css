@@ -47,13 +47,6 @@ h2 {
 
 /*--- End of code inspired by CSS module "Love Running" of Code Institute */
 
-
-.active {
-    border-bottom: 1px solid darkslategray;
-    border-radius: 10%;
-    font-weight: 800;
-}
-
 .nav-link {
     letter-spacing: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -78,10 +71,6 @@ z-index: 9999;
 width: 100%;
 }
 
-#why {
-    padding-top:60px;
-}
-
 #what {
     padding-top:60px;
 }
@@ -94,24 +83,22 @@ width: 100%;
     padding-top:110px;
 }
 
+
 @media only screen and (min-width: 700px) {
 .navbar-brand h1 {
     font-size: 30px;
-    color: darkslategray;
     letter-spacing : 10px;
-    font-family: 'Montserrat';
 }
 }
 
 @media only screen and (max-width: 700px) {
 .navbar-brand h1 {
     font-size: 23px;
-    color: darkslategray;
     letter-spacing : 5px;
 }
 };
 
-/*----- Footer-----*/
+/**----- Footer-----**/
 
 .page-content {
     margin-bottom: 80px;
@@ -122,8 +109,8 @@ width: 100%;
     left: 0;
     bottom: 0;
     width: 100%;
-    height: 40px;
-    margin-top: 20px;
+    height: 60px;
+    margin-top: 10px;
 }
 
 .footer-list {
@@ -143,7 +130,7 @@ width: 100%;
     width: 32px;
     height: 32px;
     padding: 12px 25px;
-    padding-top: 10px;
+    padding-top: 20px;
     color: darkslategray;
     font-size: 20px;
     border-radius: 50%;
@@ -151,27 +138,18 @@ width: 100%;
 
 /*----Why Bolivia section ---*/
 
-.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
 .bg-color-why {
     background: url("../img/why-img.jpg") center center;
     height:250px;
-    padding-top: 5%;
-    padding-bottom:5%;
-    padding-left: 10%;
-    padding-right:10%; 
     margin-left: auto;
     margin-right: auto;
     margin-top:15%;
     margin-bottom:20px;
     border-radius:5%;
 }
+
+
+/**Webkit effect inspired from https://www.web-eau.net/blog/15-effets-css3-pour-vos-images **/
 
 @media only screen and (min-width: 1050px) {
 .bg-color-why {
@@ -196,8 +174,9 @@ width: 100%;
 }
 }
 
+/**End of credit**/
 
-.bg-color-description-why{
+.bg-description-why{
     padding:20px;
 }
 
@@ -230,7 +209,8 @@ width: 100%;
     display: block;
     margin: auto;
     padding: 10px;
-	-webkit-transform: scale();
+/**Webkit effect inspired from https://www.web-eau.net/blog/15-effets-css3-pour-vos-images **/
+	-webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
@@ -240,6 +220,7 @@ width: 100%;
 	-webkit-transform: scale(0.9);
 	transform: scale(0.9);
 }
+/**End of credit**/
 
 .testimony-section {
     margin-top: 10%;
@@ -266,31 +247,30 @@ width: 100%;
     background-color:rgb(212, 230, 241 );
 }
 
+.form-position {
+    margin-left:auto;
+    margin-right:auto;
+}
+
 #form-section {
-    margin-left: auto;
-    margin-right: auto;
     border-radius:5%;
-    border: 3px solid rgb(212, 230, 241 ); 
-    background-color: rgb(212, 230, 241, 0.1 ); 
+    border: 3px solid rgb(212, 230, 241); 
+    background-color: rgb(212, 230, 241, 0.1); 
     padding:20px;
     margin-top:10%;
 }
 
-.form-position {
-    margin-left: auto;
-    margin-right: auto;}
-
 .btn-bg {
-    background-color: rgb(212, 230, 241 ); 
+    background-color: rgb(212, 230, 241); 
     border-radius:10%;
     max-width:30%;
-    margin-left:0;
-    margin-right:0;
+    margin: 2%;
 }
 
 .btn-bg:hover {
     background-color: rgb(127, 179, 213);
     color:white;
+    cursor:pointer;
 }
 
 .btn-position {
@@ -303,102 +283,25 @@ width: 100%;
 #map {
     min-height: 300px;
     min-width: 90%;
-    margin-top:10%;
     margin-bottom:5%;
 }
 
 .img-whattodo {
-    width:250px;
+    width:100%;
     height:225px;
     float:left;
     border-radius:15%;
-    margin-right:0;
-    margin-left:0;
-    margin-bottom:0;
     margin-top:15px;
 }
 
 .description {
     float:right;
+    margin-top:15px;
     margin-bottom:10px;
 }
 
-.btn-bg-activity {
-    color:white;
-    margin-left:2%;
-    text-transform:uppercase;
-    letter-spacing: 2px;
-    font-size:16px;
-    font-weight:900;
-    border-radius:5%;
-}
-
-.btn-party {
-    padding:30px 70px;
-    border:3px solid darkslategray;
-    background: url("../img/party.jpg") center center;
-}
-
-.btn-party:hover {
-    color:white;
-}
-
-@media only screen and (min-width: 1050px) {
-.btn-party {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
-}
-
-.btn-party:hover {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-}
-
-.btn-adventure {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .4s ease-in-out;
-	transition: .4s ease-in-out;
-}
-
-.btn-adventure:hover {
-    color:white;
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-}
-.btn-food {
-	-webkit-filter: grayscale(100%);
-	filter: grayscale(100%);
-	-webkit-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
-    }
-
-.btn-food:hover {
-	-webkit-filter: grayscale(0);
-	filter: grayscale(0);
-}
-}
-
-.btn-adventure {
-    padding:30px 47px;
-    border:3px solid darkslategray;
-    background: url("../img/adventure.jpg") center center;
-}
-
-.btn-adventure:hover {
-    color:white;
-}
-
-.btn-food {
-    padding:30px 73px;
-    border:3px solid darkslategray;
-    background: url("../img/food.jpg") center center;
-}
-
-.btn-food:hover {
-    color:white;
+.description p {
+    text-align:center;
 }
 
 .whattodo-details {
@@ -406,11 +309,6 @@ width: 100%;
     border-left:2px solid black;
     border-right:2px solid black;
     margin-top:5%;
-}
-
-
-.whattodo-details p {
-    text-align:center;
 }
 
 .whattodo-details h3 {
@@ -429,40 +327,114 @@ width: 100%;
     margin-bottom:3%;
 }
 
-.btn-bg {
-    margin: 2%;
+.btn-bg-activity {
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+    font-weight:900;
+    border-radius:5%;
 }
 
+.btn-party {
+    padding:25px;
+    border:3px solid darkslategray;
+    background: url("../img/party.jpg") center center;
+}
 
-@media only screen and (min-width: 1050px) {
-.btn-activity-position {
+.btn-party:hover {
+    color:white;
+    cursor:pointer;
+}
+
+.btn-adventure {
+    padding:25px;
+    border:3px solid darkslategray;
+    background: url("../img/adventure.jpg") center center;
+}
+
+.btn-adventure:hover {
+    color:white;
+    cursor:pointer;
+}
+
+.btn-food {
+    padding:25px;
+    border:3px solid darkslategray;
+    background: url("../img/food.jpg") center center;
+}
+
+.btn-food:hover {
+    color:white;
+    cursor:pointer;
+}
+
+@media only screen and (min-width: 700px) {
+#btn-party {
     margin-left:5%;
 }
 }
 
-@media only screen and (max-width: 700px) {
+/**Webkit effect inspired from https://www.web-eau.net/blog/15-effets-css3-pour-vos-images **/
+
+@media only screen and (min-width: 1050px) {
+.btn-party {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.btn-party:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    cursor:pointer;
+}
+
+.btn-adventure {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .4s ease-in-out;
+	transition: .4s ease-in-out;
+}
+
+.btn-adventure:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    cursor:pointer;
+}
+
+.btn-food {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+
+.btn-food:hover {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+    cursor:pointer;
+}
+
+/**End of credit**/
+
+}
+
+@media only screen and (max-width: 550px) {
 .btn-activity-position {
-    margin-left:23%;
     margin-top:5%;
     margin-bottom:5%;
 }
 
-
-.btn-sm-center {
-    margin-top: 5px;
-    margin-bottom:5px;
+.btn-bg-activity {
+    margin-top:2%;
+    margin-bottom:2%;
 }
 
 .btn-bg {
     margin-left:3px;
     margin-right:3px;
     margin-top:5%;
-    margin-bottom:5%;}
-
-};
-
-@media only screen and (max-width: 1000px) {
-.whattodo-type h2 {
-    font-size:0.75em;
-}
-};
+    margin-bottom:5%;}};
