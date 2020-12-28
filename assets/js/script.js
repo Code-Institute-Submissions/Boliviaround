@@ -1,12 +1,18 @@
+/** Credit to : https://mdbootstrap.com/support/general/auto-close-navbar-when-click-on-link-responsive-mode/ */
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
 
-  $(".description-salar-duyuni").show();
+/**End of credit */
+
+  $(".description-salar-duyuni").hide();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
   $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-eduardo-avaroa").hide();
   $(".description-bymz").hide();
-  $(".description-kultur").hide();
+  $(".description-kultur").show();
   $(".description-diesel").hide();
 
 /**Adventure section */
