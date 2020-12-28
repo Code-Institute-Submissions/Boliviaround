@@ -47,6 +47,13 @@ h2 {
 
 /*--- End of code inspired by CSS module "Love Running" of Code Institute */
 
+
+.active {
+    border-bottom: 1px solid darkslategray;
+    border-radius: 10%;
+    font-weight: 800;
+}
+
 .nav-link {
     letter-spacing: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -296,10 +303,25 @@ width: 100%;
 #map {
     min-height: 300px;
     min-width: 90%;
-    margin-top:5%;
+    margin-top:10%;
     margin-bottom:5%;
 }
 
+.img-whattodo {
+    width:250px;
+    height:225px;
+    float:left;
+    border-radius:15%;
+    margin-right:0;
+    margin-left:0;
+    margin-bottom:0;
+    margin-top:15px;
+}
+
+.description {
+    float:right;
+    margin-bottom:10px;
+}
 
 .btn-bg-activity {
     color:white;
@@ -419,7 +441,6 @@ width: 100%;
 }
 
 @media only screen and (max-width: 700px) {
-
 .btn-activity-position {
     margin-left:23%;
     margin-top:5%;
