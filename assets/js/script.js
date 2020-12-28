@@ -1,10 +1,3 @@
-/** Credit to : https://mdbootstrap.com/support/general/auto-close-navbar-when-click-on-link-responsive-mode/ */
-    $('.navbar-collapse a').click(function(){
-        $(".navbar-collapse").collapse('hide');
-    });
-
-/**End of credit */
-
   $(".description-salar-duyuni").hide();
   $(".description-gustu").hide();
   $(".description-choriceria").hide();
@@ -115,8 +108,8 @@ $("#btn-party").click(function(){
   $(".description-gattopardo").hide();
   $(".description-yungaz-road").hide();
   $(".description-bymz").hide();
-  $(".description-kultur").hide();
-  $(".description-diesel").show();
+  $(".description-kultur").show();
+  $(".description-diesel").hide();
   $(".description-eduardo-avaroa").hide();});
 
 $(".btn-diesel").click(function(){
@@ -151,3 +144,10 @@ $(".btn-bymz").click(function(){
   $(".description-kultur").hide();
   $(".description-diesel").hide();
   $(".description-eduardo-avaroa").hide();});
+
+  /** Credit to : https://mdbootstrap.com/support/general/auto-close-navbar-when-click-on-link-responsive-mode/ */
+    $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
+    });
+
+/**End of credit */

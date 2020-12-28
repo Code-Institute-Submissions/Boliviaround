@@ -1,0 +1,4 @@
+[master 307e868] Fix bugs 1) make navbar collapses in responsive version after clicking on a nav-ling, 2) correct emailsJS script link (missing
+ 5 files changed, 106 insertions(+), 27 deletions(-)
+ rewrite README.md (98%)
+ rename wireframes/{ms2_desktop_wireframe.pdf => ms2_wireframe.pdf} (100%)
