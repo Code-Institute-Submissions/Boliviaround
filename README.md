@@ -79,7 +79,7 @@ I used Balsamic to build my wireframe prior to the website coding.
 The idea was to get an idea of what sections I would build and what design I would roughly 
 create. Wireframes were built regarding desktop, tablet and phone versions:
 
-* [Balsamic Wireframes (desktop, tablet, phone)](documentation/wireframes/ms2_wireframe)
+* [Balsamic Wireframes (desktop, tablet, phone)](documentation/wireframes/ms2_wireframe.pdf)
 
 ## __Features__
 
