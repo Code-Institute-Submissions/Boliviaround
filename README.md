@@ -62,7 +62,12 @@ A submit button is at the end of the form. By clicking on it, the customer submi
 
 *I especially tested twice the following features to be sure they work properly :*
 
-* Responsive versions of the website
+* Responsive versions of the website :
+
+__Phone__: Moto G4, Galaxy S5, Pixel 2, Pixel 2 XL, Iphone 5/SE, Iphone 6/7/8, Iphone 6/7/8 Plus, Iphone X
+
+__Tablet__: Ipad, Ipad Pro, Surface Duo
+
 * Website tested throught Microsoft Edge and Chrome browsers
 * Logo text in navigation bar to be sure it brings the customer back to BoliviAround website (i.e. index.html)
 * Why Bolivia, What to do, What they say and Contact in navigation bar to make sure links work properly and brings to the correct
