@@ -9,6 +9,7 @@ To highlight the efficency of the travel agency, testimonies from users are also
 This website is for users to discover Bolivia and his wonders while inspiring users to travel with the agency BoliviAround.
 
 *__External users goals__*
+
 As a user, I want to: 
 1. understand why Bolivia could be my next travel destination
 2. discover what travels' offers this agency proposes, especially regarding my own interests 
@@ -18,6 +19,7 @@ As a user, I want to:
 6. easily follow BoliviAround’s social networks if I am interested
 
 *__Internal users goals__*
+
 As a site owner, I want to:
 1. convince users that Bolivia is the best place for their next holidays
 2. describe my current offers and what points of interests we are focusing in (adventures, parties or foods)
