@@ -100,7 +100,7 @@ $(document).ready(function ()
 
     $(".btn-gattopardo").on('click', function ()
     {
-	  newLocation(-21.533319122582853, -64.73381610468566);
+	  newLocation(-21.533566428947406, -64.73380287177643);
     });
 
     /**Party */
