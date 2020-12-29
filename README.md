@@ -29,10 +29,10 @@ As a site owner, I want to:
 
 *__User experiences__*
 
-*As a customer, I want to navigate easily thought Between the Lines*
+*As a customer, I want to navigate easily throught BoliviAround*
 
 A navigation on the top right of the screen synthesis the main sections of the website : Why Bolivia, What to do, What they say, Contact.
-Clicking on the title of the website "Between the lines" will bring back the user to the BoliviAround website.
+Clicking on the title of the website "BoliviAround" will bring back the user to the BoliviAround website.
 
 *As a customer, I want to easily follow BoliviAround’s social networks if I am interested*
 
