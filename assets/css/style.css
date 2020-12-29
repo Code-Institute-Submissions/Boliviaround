@@ -326,6 +326,12 @@ width: 100%;
     margin-bottom:3%;
 }
 
+.btn-active {
+    background-color: rgb(127, 179, 213);
+    color:white;
+    cursor:pointer;
+}
+
 .btn-bg-activity {
     color:white;
     margin-left:auto;
