@@ -81,6 +81,9 @@ create. Wireframes were built regarding desktop, tablet and phone versions:
 
 * [Balsamic Wireframes (desktop, tablet, phone)](documentation/wireframes/ms2_wireframe.pdf)
 
+While I was building the project, I decided to add a section where customers share their feedbacks/testimonies
+regarding BoliviAround - which is the reason why this section doesn't appear in the initial wireframes.
+
 ## __Features__
 
 1. __Existing Features__
